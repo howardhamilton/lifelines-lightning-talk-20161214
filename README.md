@@ -16,3 +16,24 @@ interest to the time to event.
 
 This talk provides an overview of this library, with Soccermetrics'
 research on the Major League Soccer draft serving as a use case.
+
+
+MLS Draft Data
+--------------
+
+The `mls_draft_data.csv` file contains data used to illustrate the
+capabilities of the `lifelines` package. A description of the fields is
+listed below:
+
+| Field       | Type    | Description                                           |
+|:------------|:--------|:------------------------------------------------------|
+| GA          | boolean | Player participated in Generation Adidas program      |
+| draft       | string  | Type of MLS player draft                              |
+| draft_pick  | float   | Normalized draft position, 0=first pick, 1=final pick |
+| draft_round | integer | Round of draft in which player selected               |
+| inactive    | boolean | Is player not active in 2016 MLS season?              |
+| matches     | integer | Total league match appearances by player              |
+| player      | string  | Name of drafted player                                |
+| year        | integer | Draft year                                            |
+
+Sources: Major League Soccer, MLS Players Union, Wikipedia
